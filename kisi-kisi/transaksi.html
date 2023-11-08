@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            margin: 20px 30px;
+        }
+
+        nav {
+            background-color: #00293F;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+
+        nav ul,
+        .logout {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 0px 20px;
+        }
+
+        .cek {
+            display: flex;
+            gap: 70px;
+        }
+
+        .logout li a {
+            color: red;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        .container {
+            background-color: #014468;
+            margin-top: 20px;
+            padding: 50px 70px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .no,
+        .tgg,
+        .nama,
+        .paket,
+        .harga {
+            margin-bottom: 20px;
+        }
+
+        .no input,
+        .nama input,
+        .paket input,
+        .harga input,
+        .totalHarga input {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .no input {
+            margin-left: 35px;
+        }
+
+        .nama input {
+            margin-left: 17px;
+        }
+
+        .paket input {
+            margin-left: 45px;
+            height: 100px;
+        }
+
+        .harga input {
+            margin-left: 47px;
+            height: 100px;
+        }
+
+        .paket,
+        .harga {
+            display: flex;
+        }
+
+        .no label,
+        .tgg label,
+        .nama label,
+        .paket label,
+        .harga label,
+        .totalHarga label {
+            padding-right: 40px;
+        }
+
+        .tgg input {
+            padding: 5px 46px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .totalHarga button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 130px;
+        }
+
+        .radio {
+            margin-right: 400px;
+            padding: 20px 0px;
+        }
+
+        .total {
+            margin-top: 30px;
+            padding: 30px 90px;
+            background-color: #014468;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .hargaTotal {
+            margin-bottom: 20px;
+        }
+
+        .pembayaran-group {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hargaTotal input,
+        .pembayaran input,
+        .kembalian input {
+            margin-left: 20px;
+            height: 25px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .btn button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn button:hover {
+            background-color: #d9d9d9;
+        }
+
+        .totalHarga button:hover {
+            background-color: #d9d9d9;
+        }
+
+        footer {
+            background-color: #00293F;
+            color: white;
+            padding: 20px 0px;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div class="cek">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+        </div>
+            <div class="logout">
+                <li><a href="login.html">logout</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="transaksi">
+            <form action="#" method="post">
+                <div class="no">
+                    <label for="no">No Transaksi</label>
+                    <input type="number" name="no" id="no">
+                </div>
+                <div class="tgg">
+                    <label for="tgg">Tanggal Transaksi</label>
+                    <input type="date" name="tgg" id="tgg">
+                </div>
+                <div class="nama">
+                    <label for="nama">Nama Customer</label>
+                    <input type="text" name="nama" id="nama">
+                </div>
+                <div class="paket">
+                    <label for="paket">Pilihan Paket</label>
+                    <input type="text" name="paket" id="paket">
+                </div>
+                <div class="harga">
+                    <label for="harga">Harga Paket</label>
+                    <input type="text" name="harga" id="harga">
+                </div>
+            </form>
+        </div>
+        <div class="radio">
+            <div class="satu">
+                <input type="radio" id="nope" name="nope">
+                <label for="nope">Tidak ada tambahan - Rp.0</label>
+            </div>
+            <div class="dua">
+                <input type="radio" id="wax" name="wax">
+                <label for="wax">Wax - Rp. 10.000</label>
+            </div>
+            <div class="tiga">
+                <input type="radio" id="fogging" name="fogging">
+                <label for="fogging">Fogging - Rp.20.000</label>
+            </div>
+            <div class="totalHarga">
+                <button>Total Harga</button>
+            </div>
+        </div>
+    </div>
+    <section class="total">
+        <div class="hargaTotal">
+            <label for="totall">Total Harga</label>
+            <input type="text" id="totall" name="totall">
+        </div>
+        <div class="pembayaran-group">
+            <div class="pembayaran">
+                <label for="pembayaran">Pembayaran</label>
+                <input type="text" name="pembayaran" id="pembayaran">
+            </div>
+            <div class="kembalian">
+                <label for="kembali">Kembalian</label>
+                <input type="text" name="kembali" id="kembali">
+            </div>
+        </div>
+        <div class="btn">
+            <button>Hitung Kembalian</button>
+            <button>Simpan Transaksi</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; copyright Syahla Nur Azizah</p>
+    </footer>
+</body>
+
+</html>

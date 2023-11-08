@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+        }
+
+        body {
+            margin: 20px 30px;
+        }
+
+        /* .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }  */
+
+        .image-banner {
+            margin-top: 20px;
+        }
+
+        .image-banner img {
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: #00293F;
+            padding: 20px 20px;
+            border-radius: 5px;
+        }
+
+        nav ul,
+        .logout {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 0px 20px;
+        }
+
+        .cek {
+            display: flex;
+            gap: 70px;
+        }
+
+        .logout li a {
+            color: red;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        .title h2 {
+            font-size: 20px;
+            text-align: start;
+            padding: 30px 30px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            width: 15%;
+            height: auto;
+        }
+
+        .box1 p,
+        .box2 p,
+        .box3 p,
+        .box4 p {
+            margin: 10px 0px;
+        }
+
+        .desc1, .desc2, .desc3, .desc4 {
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+
+        .box1 .desc1,
+        .box2 .desc2,
+        .box3 .desc3,
+        .box4 .desc4 {
+            background-color: #014468;
+            padding: 10px 10px;
+            color: white;
+        }
+
+        .box1 .btn1,
+        .box2 .btn2,
+        .box3 .btn3,
+        .box4 .btn4 {
+            margin-top: 50px;
+        }
+
+        .box1 .btn1 button a,
+        .box2 .btn2 button a,
+        .box3 .btn3 button a, 
+        .box4 .btn4 button a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .box1 .btn1 button,
+        .box2 .btn2 button,
+        .box3 .btn3 button,
+        .box4 .btn4 button {
+            width: 210px;
+            border: none;
+            background-color: #00293F;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        .btn1 button:hover,
+        .btn2 button:hover,
+        .btn3 button:hover,
+        .btn4 button:hover {
+            background-color: #014468;
+        }
+
+        footer {
+            background-color: #00293F;
+            color: white;
+            padding: 20px 0px;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div class="cek">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+        </div>
+            <div class="logout">
+                <li><a href="login.html">logout</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="image-banner">
+            <img src="assets/banner.jpg" width="100%">
+        </div>
+        <div class="title">
+            <h2>Daftar Paket Pencucian Mobil</h2>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="desc1">
+                    <h3>Cuci Mobil Kecil</h3>
+                    <p>Suzuki Karimun, <span>toyota agya,</span> <span>swift, ayla, jazz</span></p>
+                    <p>Rp. 40.000</p>
+                </div>
+                <div class="btn1">
+                    <button><a href="transaksi.html">PILIH PAKET</a></button>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="desc2">
+                    <h3>Cuci Mobil Sedang</h3>
+                    <p>Crv, Hrv mobilio, civic</p>
+                    <p>Rp. 45.000</p>
+                </div>
+                <div class="btn2">
+                    <button><a href="transaksi.html">PILIH PAKET</a></button>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="desc3">
+                <h3>Cuci Mobil Besar</h3>
+                <p>Fortuner, Pajero, Robicorn</p>
+                <p>Rp. 50.000</p>
+            </div>
+            <div class="btn3">
+                <button><a href="transaksi.html">PILIH PAKET</a></button>
+            </div>
+            </div>
+            <div class="box4">
+                <div class="desc4">
+                <h3>Cuci Mobil Sangat Besar</h3>
+                <p>Alpard, lexus, Velfire</p>
+                <p>Rp. 55.000</p>
+            </div>
+            <div class="btn4">
+                <button><a href="transaksi.html">PILIH PAKET</a></button>
+            </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; copyright Syahla Nur Azizah</p>
+        </footer>
+    </div>
+</body>
+
+</html>
