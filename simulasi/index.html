@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        header {
+            height: 80px;
+            background-color: #eeeeee;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav {
+            padding: 20px 20px;
+            background-color: #eeeeee;
+        }
+
+        .banner {
+            background-color: blue;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-weight: 100;
+            font-size: 30px;
+        }
+
+        .plum {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            background-color: #d9d9d9;
+            width: 30%;
+            padding: 90px 0;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            margin-top: 30px;
+            width: 70%;
+        }
+
+        .image img {
+            margin-bottom: 20px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .line1,
+        .line2 {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        .sidebar ul {
+            padding-left: 0;
+            gap: 40px;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: blue;
+            text-align: center;
+            color: white;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Beranda</li>
+                <li>Layanan Kami</li>
+                <li>Tentang Kami</li>
+                <li>Kontak Kami</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <h1>Selamat Datang di Website Kami!</h1>
+    </div>
+    <div class="plum">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Artikel</a></li>
+                <li><a target="_blank" href="https://github.com/fesloth">Bantuan</a></li>
+                <li>Kuesioner</li>
+                <li>Login</li>
+                <li><a target="_blank" href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="image">
+                <img src="assets/pencil.jpg" width="1000">
+            </div>
+            <div class="line1">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium ducimus doloribus sed
+                nostrum amet consequatur animi maiores laudantium nisi! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptate, porro expedita facere, totam unde laboriosam qui corporis mollitia omnis a
+                eligendi cumque quod exercitationem obcaecati, tempora aliquam sapiente quia saepe.
+            </div>
+            <div class="line2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nostrum nulla nemo asperiores esse veniam.
+                Corrupti nisi esse incidunt adipisci perferendis labore molestias voluptatum aut voluptas, vero in atque
+                beatae quo ullam laborum doloremque. Assumenda voluptatibus tempore architecto, deleniti veniam
+                similique molestiae officia odio eaque mollitia deserunt adipisci ex facilis! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Esse est consequatur asperiores fugit totam nihil, minima magni fugiat
+                molestias ducimus!
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>copyright Syahla Nur Azizah</p>
+    </footer>
+</body>
+
+</html>

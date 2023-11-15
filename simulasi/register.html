@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        header {
+            height: 80px;
+            background-color: #eeeeee;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav {
+            padding: 20px 20px;
+            background-color: #eeeeee;
+        }
+
+        .banner {
+            background-color: blue;
+            color: white;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-weight: 100;
+            font-size: 30px;
+        }
+
+        .plum {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            background-color: #d9d9d9;
+            width: 30%;
+            padding: 90px 0;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar ul {
+            padding-left: 0;
+            gap: 40px;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            margin-top: 30px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .input-group input {
+            border: none;
+            background-color: #d9d9d9;
+            padding: 5px 15px;
+            margin-top: 7px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 40px;
+            width: 600px;
+        }
+
+        .username input {
+            width: 630px;
+        }
+
+        .sandi input {
+            width: 280px;
+        }
+
+        .confirm input {
+            width: 280px;
+        }
+
+        .input-group div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            width: 58%;
+            margin-top: 10px;
+        }
+
+
+        .btn button {
+            border: none;
+            cursor: pointer;
+            padding: 10px 40px;
+            background-color: #d9d9d9;
+        }
+
+        footer {
+            background-color: blue;
+            text-align: center;
+            color: white;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Beranda</li>
+                <li>Layanan Kami</li>
+                <li>Tentang Kami</li>
+                <li>Kontak Kami</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <h1>Selamat Datang di Portal Pendaftaran</h1>
+    </div>
+    <div class="plum">
+        <div class="sidebar">
+            <ul>
+                <li><a target="_blank" href="index.html">Artikel</a></li>
+                <li><a target="_blank" href="https://github.com/fesloth">Bantuan</a></li>
+                <li>Kuesioner</li>
+                <li>Login</li>
+                <li><a target="_blank" href="register.html">Register</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <form action="">
+            <div class="input-group">
+                <div class="nama">
+                    <label for="nama">Nama Depan</label>
+                    <input type="text" name="nama" id="nama">
+                </div>
+                <div class="namaB">
+                    <label for="namaB">Nama Belakang</label>
+                    <input type="text" name="namaB" id="namaB">
+                </div>
+                <div class="email">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="sandi">
+                    <label for="sandi">Kata Sandi</label>
+                    <input type="password" name="sandi" id="sandi">
+                </div>
+                <div class="confirm">
+                    <label for="confirm">Konfirmasi Kata Sandi</label>
+                    <input type="text" name="confirm" id="confirm">
+                </div>
+            </div>
+            <div class="btn">
+                <button>Reset Form</button>
+                <button>Submit Form</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <footer>
+        <p>copyright Syahla Nur Azizah</p>
+    </footer>
+</body>
+
+</html>
